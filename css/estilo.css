@@ -7,6 +7,17 @@ body {
 div {
     margin-bottom: 20px;
 }
+button {
+    display: block;
+    margin-bottom: 20px;
+    background-color: chocolate;
+    border: 2px solid black;
+}
+
+a {
+    width: 70px;
+    height: 50px;
+}
 
 /**
     Ejercicio Top 3 jesuitas
