@@ -1,0 +1,125 @@
+body {
+    background-color: #222;
+    color: white;
+}
+
+/* Espacio entre los diferentes ejercicios*/
+div {
+    margin-bottom: 20px;
+}
+
+/**
+    Ejercicio Top 3 jesuitas
+*/
+.containerJesuitas{
+    display: flex;
+    height: 70px;
+    background-color: black;
+    align-items: flex-end;
+    
+}
+
+.containerJesuitas p {
+    flex-shrink: 2;
+    flex-grow: 2;
+    border: 1px solid red;
+    padding-left: 20px;
+}
+
+.containerJesuitas p:nth-child(1) {
+    border: 2px solid cyan;
+    width: 100px;
+
+}
+.containerJesuitas p:nth-child(2) {
+    border: 2px solid yellow;
+}
+.containerJesuitas p:nth-child(3) {
+    border: 2px solid coral;
+    flex-basis: 200px; /* Añade un tamaño antes de que el espacio restante sea distribuido */
+}
+/**
+    Fin top 3
+*/
+
+/**
+    Jesuitas DESORDENADOS
+*/
+.desorden {
+    display: flex;
+    width: 250px;
+    background-color: black;
+}
+.desorden p {
+    margin-left: 20px;
+    border: 2px solid purple;
+}
+
+.desorden p:nth-child(1) { order: 2; }
+.desorden p:nth-child(2) { order: 1; }
+.desorden p:nth-child(3) { order: 3; }
+
+/*FIN DESORDENADOS*/
+
+
+/*
+    Ejercicio Jesuitas al revés
+*/
+
+.alreves {
+    display: flex;
+    width: 250px;
+    background-color: black;
+    flex-direction: row-reverse;
+    /* Con un shorhand*/
+    /*flex-flow: row-reverse nowrap;*/
+    justify-content: center;
+}
+.alreves p {padding-left: 20px;  }
+
+/*
+Muestra la lista de colegios, si no cabe en la línea pasa a la siguiente
+*/
+
+.colegios {
+    display: flex;
+    width: 250px;
+    background-color: black;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    /*Espacio de fila y espacio de columna.*/
+    gap: 19px 10px;
+
+}
+.colegios p { padding-left: 20px;}
+
+/* 
+    Muestra la lista de ciudades donde han nacido algunos jesuitas
+*/
+
+.ciudadesJesuitas {
+    display: flex;
+    background-color: black;
+    border: 2px solid red;
+    width: 70px;
+    height: 350px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.ciudadesJesuitas p {
+    width: 100%;
+    height: 70px;
+    background-color: chocolate;
+    text-align: center;
+
+    /* Reset a propiedades por defecto del p*/
+    display: inline;
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+
+/** 
+    FALTA: align-self, align contents
+*/
