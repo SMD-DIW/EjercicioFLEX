@@ -1,23 +1,57 @@
+/*
+    Sergio Matamoros Delgado
+*/
 body {
     background-color: #222;
     color: white;
 }
 
-/* Espacio entre los diferentes ejercicios*/
+/* Espacio entre los diferentes ejercicios (antiguo)*/
 div {
     margin-bottom: 20px;
 }
-button {
-    display: block;
+
+/*
+    Estilo de los botones (atrás y enlaces a ejercicios)
+*/
+#botones {
+    margin: auto;
+    padding-top: 10px;
+
+    
+    background-color: cyan;
+    display: flex;
+    width: 500px;
+    min-height: 290px;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px 5px;
+
+    flex-wrap: wrap;
+
+}
+
+#botones button {
+    flex-wrap: wrap;
+}
+
+button
+{
+    width: 150px;
+    min-height: 80px;
     margin-bottom: 20px;
-    background-color: chocolate;
+    background-color: rgb(153, 51, 221);
     border: 2px solid black;
 }
 
 a {
     width: 70px;
     height: 50px;
+    text-decoration: none;
 }
+a:visited, a:active, a:link { color: white; }
 
 /**
     Ejercicio Top 3 jesuitas
@@ -39,7 +73,8 @@ a {
 
 .containerJesuitas p:nth-child(1) {
     border: 2px solid cyan;
-    width: 100px;
+    /*width: 100px;*/
+    flex-basis: 100px; /* Añade un tamaño antes de que el espacio restante sea distribuido */
 
 }
 .containerJesuitas p:nth-child(2) {
@@ -47,7 +82,6 @@ a {
 }
 .containerJesuitas p:nth-child(3) {
     border: 2px solid coral;
-    flex-basis: 200px; /* Añade un tamaño antes de que el espacio restante sea distribuido */
 }
 /**
     Fin top 3
@@ -108,7 +142,6 @@ Muestra la lista de colegios, si no cabe en la línea pasa a la siguiente
 /* 
     Muestra la lista de ciudades donde han nacido algunos jesuitas
 */
-
 .ciudadesJesuitas {
     display: flex;
     background-color: black;
