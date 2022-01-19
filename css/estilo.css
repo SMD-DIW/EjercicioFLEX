@@ -1,11 +1,20 @@
 /*
-    Sergio Matamoros Delgado
+▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶
+▲        Sergio Matamoros Delgado          ▲
+▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶
 */
 body {
     background-color: #222;
     color: white;
 }
 
+
+/*
+    =================================
+        Estilos generales
+    =================================
+
+*/
 /* Espacio entre los diferentes ejercicios (antiguo)*/
 div {
     margin-bottom: 20px;
@@ -18,7 +27,7 @@ div {
     margin: auto;
     padding-top: 10px;
 
-    
+
     background-color: cyan;
     display: flex;
     width: 500px;
@@ -30,7 +39,6 @@ div {
     gap: 10px 5px;
 
     flex-wrap: wrap;
-
 }
 
 #botones button {
@@ -53,6 +61,27 @@ a {
 }
 a:visited, a:active, a:link { color: white; }
 
+
+/*
+▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶
+    _____________________________________
+    |                                    |
+    |    ******************************* |
+    |    |   ESTILOS DE LOS EJERCICIOS   |
+    |    ******************************  |
+    |   ‖    ‖    ‖     ‖    ‖    ‖      |
+    |   ▼    ▼    ▼     ▼    ▼    ▼      |
+    _____________________________________
+▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶
+*/
+
+
+/*
+    =================================
+        Estilos Ejercicio 1
+    =================================
+
+*/
 /**
     Ejercicio Top 3 jesuitas
 */
@@ -84,9 +113,15 @@ a:visited, a:active, a:link { color: white; }
     border: 2px solid coral;
 }
 /**
-    Fin top 3
+    FIN ejercicio top 3 jesuitas
 */
 
+/*
+    =================================
+        Estilos Ejercicio 2
+    =================================
+
+*/
 /**
     Jesuitas DESORDENADOS
 */
@@ -106,6 +141,12 @@ a:visited, a:active, a:link { color: white; }
 
 /*FIN DESORDENADOS*/
 
+/*
+    =================================
+        Estilos Ejercicio 3
+    =================================
+
+*/
 
 /*
     Ejercicio Jesuitas al revés
@@ -123,9 +164,14 @@ a:visited, a:active, a:link { color: white; }
 .alreves p {padding-left: 20px;  }
 
 /*
+    =================================
+        Estilos Ejercicio 4
+    =================================
+
+*/
+/*
 Muestra la lista de colegios, si no cabe en la línea pasa a la siguiente
 */
-
 .colegios {
     display: flex;
     width: 250px;
@@ -139,6 +185,14 @@ Muestra la lista de colegios, si no cabe en la línea pasa a la siguiente
 }
 .colegios p { padding-left: 20px;}
 
+/* Fin colegios*/
+
+/*
+    =================================
+        Estilos Ejercicio 5
+    =================================
+
+*/
 /* 
     Muestra la lista de ciudades donde han nacido algunos jesuitas
 */
