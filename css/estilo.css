@@ -94,16 +94,37 @@ a:visited, a:active, a:link { color: white; }
 }
 
 .containerJesuitas p {
-    flex-shrink: 2;
+
+    /**
+        Con el flex grow con el valor a 2 lo que hacemos es que coja doblemente el espacio
+        restante que haya  (o por lo menos lo intente).
+
+        El tamaño que tiene que asignar a los elementos los coge dividiendo en partes la caja
+        contenedora, es decir, subdividimos la caja en diferentes partes. 
+        
+        lo divide en 6 partes, ya que hay 3 parrafos 
+
+        Lo que hace es; divide el espacio sobrante en X partes,
+        que las coge de los valores que se les da en sus contenedores, los parrafos en este caso
+
+
+        Por ejemplo, si tuvieramos el flex grow a 1, el espacio restante del contenedor sería
+        distribuido por iguales...
+    */
     flex-grow: 2;
+
+
+    flex-shrink: 2;
+
     border: 1px solid red;
     padding-left: 20px;
 }
 
 .containerJesuitas p:nth-child(1) {
     border: 2px solid cyan;
-    /*width: 100px;*/
     flex-basis: 100px; /* Añade un tamaño antes de que el espacio restante sea distribuido */
+    flex-shrink: 0; /* Impedimos que se pueda reducir el tamaño de esta caja */ 
+    /*flex-grow: 0; <-- Aquí no hace falta especificar que es a cero, ya que por defecto lo es.*/ 
 
 }
 .containerJesuitas p:nth-child(2) {
